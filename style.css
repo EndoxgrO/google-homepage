@@ -1,1 +1,90 @@
+/* GLOBAL STYLE */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  width: 1440px;
+  height: 100%;
+  min-width: 940px;
 
+}
+body a {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+
+/* HEADER STYLE */
+
+.header {
+  background-color: rgb(200, 200, 200);
+  width: 100%;
+  height: 30px;
+  margin-top: 0;
+  position: absolute;
+
+}
+.header a{
+  text-decoration: none;
+}
+.header-nav .fleft {
+  float: left;
+  padding: 0;
+}
+.header-nav .fright {
+  float: right;
+
+}
+
+.header-nav > li {
+  display: inline-block;
+}
+
+
+.header img {
+width: 30px;
+height: 30px;
+}
+
+
+/* CONTENT STYLE */
+.google-wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+.google-logo img {
+  height: 230px;
+  width: 400px;
+
+}
+
+.search img {
+  height: 20px;
+  width: 20px;
+}
+/* FOOTER STYLE */
+
+.footer {
+text-decoration: none;
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 30px;
+background: #efe;
+}
+
+
+.footer-nav > li {
+  display: inline-block;
+
+}
+.footer-nav .bleft {
+  float: left;
+}
+.footer-nav .bright {
+  float: right;
+}
