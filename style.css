@@ -3,13 +3,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  width: 1440px;
-  height: 100%;
+  width: 100vw;
   min-width: 940px;
-
+  height: 100%;
 }
+
 body a {
-  font-size: 14px;
+  font-size: 13px;
   color: #000;
   text-decoration: none;
 }
@@ -18,54 +18,96 @@ body a {
 /* HEADER STYLE */
 
 .header {
-  background-color: rgb(200, 200, 200);
   width: 100%;
+  min-width: 940px;
   height: 30px;
-  margin-top: 0;
   position: absolute;
 
 }
 .header a{
   text-decoration: none;
 }
+.header-nav > li {
+  display: inline-block;
+  padding-top: 0px;
+}
 .header-nav .fleft {
   float: left;
-  padding: 0;
+  display: inline-block;
+  padding-left: 7px;
 }
 .header-nav .fright {
   float: right;
-
+  padding-right: 7px;
 }
-
-.header-nav > li {
-  display: inline-block;
-}
-
-
 .header img {
 width: 30px;
 height: 30px;
 }
 
+.sign-in {
+background-color: #4285f4;
+color: #fff;
+font-weight: bold;
+padding: 7px 13px 7px 12px;
+border-radius: 2px;
+border: 1px solid #4285f4;
+}
+
 
 /* CONTENT STYLE */
+
 .google-wrapper {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  
+  width: 30%;
+  padding-top: 20vh;
 }
-.google-logo img {
-  height: 230px;
+
+.google-logo {
+  height: 194px;
   width: 400px;
-
 }
 
-.search img {
-  height: 20px;
-  width: 20px;
+.search input {
+  font-size: 16px;
+  border: 1px solid;
+  border-color: #eee;
+  background-color: white;
+  padding-left: 15px;
+  width: 585px;
+  height: 46px;
+  display: block;
+  box-shadow: 0.5px 2px 2px 0.5px rgba(0,0,0,0.2);
 }
+
+.mic {
+position: fixed;
+margin-top: -65px;
+margin-left: 550px;
+  height: 25px;
+  width: 23px;
+}
+.buttons {
+  width: 400px;
+}
+.googbutt, .luckbutt {
+    background-color: #eff0f2;
+    color: #7b7c7c;
+    border: none;
+    padding: 7px 16px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9em;
+}
+.luckbutt {
+  float: right;
+}
+
+
 /* FOOTER STYLE */
 
 .footer {
@@ -73,18 +115,28 @@ text-decoration: none;
 position: absolute;
 bottom: 0;
 width: 100%;
-height: 30px;
-background: #efe;
+min-width: 940px;
+height: 40px;
+background-color: #eff0f2;
+border-top: 0.3px solid #e0e1e5;
 }
 
-
+.footer-nav {
+  position: relative;
+}
 .footer-nav > li {
   display: inline-block;
+}
 
-}
-.footer-nav .bleft {
+.bleft {
+  line-height: 0.5em;
   float: left;
+  padding-left: 30px;
+  opacity: 0.6;
 }
-.footer-nav .bright {
+.bright {
+  line-height: 0.5em;
   float: right;
+  padding-right: 30px;
+  opacity: 0.6;
 }
